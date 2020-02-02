@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/center/center",
+    "pages/index/index",
+    "pages/main/main",
+    "pages/signup/signup",
+    "pages/getpassword/getpassword"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#5E385E",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

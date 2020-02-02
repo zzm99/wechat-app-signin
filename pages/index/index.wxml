@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="../../images/icon.jpg" mode="aspectFit" class="logo"></image>
+  <view class="signTitle">HSXFD</view>
+  <view class="whiteLine"></view>
+
+  <block>
+    <input type="number" bindinput="bindNumInput"  placeholder="Phone" placeholder-class="ph" />
+    <input type="text" bindinput="bindPsdInput"  placeholder="Password" placeholder-class="ph" password="true"/>
+  </block>
+  
+  <button class="loginBtn" bindtap="loginSubmit" plain="true" hover-class="btnHover">Login</button>
+  <a bindtap="register" class="info">Register</a>
+  <a bindtap="forget_password" class="info">Forget Password?</a>
+  <view class="footer">Copyright © 2019 HSXFD</view>
+</view>
+
+<modal title="提示" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
+  <view class="newAlert"> {{modelInnerHtml}} </view>
+</modal>
+
+<loading hidden="{{loadingHidden}}" bindchange="loadingChange">
+  加载中...
+</loading>
